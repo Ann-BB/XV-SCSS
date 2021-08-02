@@ -1,0 +1,133 @@
+header{
+    background-color: $color-bg;
+.header-conteiner{
+    @extend %size;
+    @include d-flex(flex, space-between, center);
+    @media (max-width: 700px) {
+        justify-content: space-around;
+    }
+    .left{
+        @extend %size_left;
+        font-family: $fontslg;
+        font-size: 25px;
+    }
+    .right{
+        @extend %size_right;
+        @media (max-width: 700px) {
+            display: none;
+        }
+        nav{
+            .nav-ul{
+                @include d-flex(flex, space-around, center);
+                li{
+                    font-family: $fonts01;
+                    font-size: 20px;
+                    .active{
+                        color: $color01;
+                    }
+                    .nav-li{
+                        color: $color01;
+                        opacity: 0.5;
+                        @include hovertransition(all, 0.5s, linear);
+                        &:hover {
+                            opacity: 1.0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .burger{
+        display: none;
+        @media (max-width: 700px) {
+            display: block;
+        }
+    }
+}
+}
+section{
+    background-color: $color-sc;
+.block{
+    @extend %size;
+    @include di-flex(flex, column, center);
+.title{
+    @extend %size1;
+    @include di-flex(flex, column, center);
+    h3{
+        font-family: $fontslg;
+        font-size: 20px;
+    }
+    h2{
+        font-family: $fonts01;
+        font-size: 25px;
+    }
+}
+.test-block{
+    @include d-flex(flex, space-around, center);
+    @media (max-width: 950px) {
+        flex-direction: column-reverse;
+        margin: 25px auto;
+    }
+.left-block{
+    @extend %size_right;
+    @include di-flex(flex, column, center);
+    p {
+        font-family: $fontslg;
+        font-size: 20px;
+    }
+    button{
+        @extend %sizebutton;
+        margin-top: 20px;
+        margin-left: 100px;
+        background-color: $color01;
+        color: $color-bg;
+        font-family: $fonts01;
+        font-size: 15px;
+        text-transform: uppercase;
+        cursor: pointer;
+        @include hovertransition(all, 0.4s, linear);
+        &:hover {
+            background-color: fuchsia;
+            color: ghostwhite;
+        }
+    }
+}
+.right-block{
+    img{
+        @extend %sizeimage;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        opacity: 0.5;
+        @include hovertransition(all, 0.4s, linear);
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+}
+}
+}
+footer {
+    background-color: $color01;
+    .icons-wraper{
+    @extend %sizefooter;
+    @include d-flex(flex, flex-end, center);
+    .follow{
+        font-size: 35px;
+        cursor: pointer;
+        font-family: $fontslg;
+    }
+    .icons{
+        @extend %sizeicons;
+        @include d-flex(flex, space-around, center);
+    .fab{
+        opacity: 0.5;
+        @include hovertransition(all, 0.5s, linear);
+        &:hover {
+            color: mediumslateblue;
+            opacity: 1.0;
+        }
+    }
+    }
+    }
+}

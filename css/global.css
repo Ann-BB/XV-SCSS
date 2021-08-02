@@ -1,0 +1,347 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Otomanopee One';
+  src: url("../fonts/OtomanopeeOne-Regular.eot");
+  src: url("../fonts/OtomanopeeOne-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OtomanopeeOne-Regular.woff2") format("woff2"), url("../fonts/OtomanopeeOne-Regular.woff") format("woff"), url("../fonts/OtomanopeeOne-Regular.svg#OtomanopeeOne-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dancing Script';
+  src: url("../fonts/DancingScript-Bold.eot");
+  src: url("../fonts/DancingScript-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/DancingScript-Bold.woff2") format("woff2"), url("../fonts/DancingScript-Bold.woff") format("woff"), url("../fonts/DancingScript-Bold.svg#DancingScript-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+header .header-conteiner, section .block {
+  max-width: 1170px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+header .header-conteiner .left {
+  max-width: 100px;
+  width: 100%;
+  height: auto;
+}
+
+header .header-conteiner .right, section .block .test-block .left-block {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+section .block .title {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  margin: 10px auto;
+}
+
+section .block .test-block .left-block button {
+  max-width: 100px;
+  width: 100%;
+  height: 30px;
+}
+
+section .block .test-block .right-block img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
+footer .icons-wraper {
+  max-width: 1170px;
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+}
+
+footer .icons-wraper .icons {
+  max-width: 100px;
+  width: 100%;
+  height: auto;
+}
+
+header {
+  background-color: #da76da;
+}
+
+header .header-conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 700px) {
+  header .header-conteiner {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+header .header-conteiner .left {
+  font-family: "Dancing Script";
+  font-size: 25px;
+}
+
+@media (max-width: 700px) {
+  header .header-conteiner .right {
+    display: none;
+  }
+}
+
+header .header-conteiner .right nav .nav-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-conteiner .right nav .nav-ul li {
+  font-family: "Otomanopee One";
+  font-size: 20px;
+}
+
+header .header-conteiner .right nav .nav-ul li .active {
+  color: #2c021c;
+}
+
+header .header-conteiner .right nav .nav-ul li .nav-li {
+  color: #2c021c;
+  opacity: 0.5;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+header .header-conteiner .right nav .nav-ul li .nav-li:hover {
+  opacity: 1.0;
+}
+
+header .header-conteiner .burger {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  header .header-conteiner .burger {
+    display: block;
+  }
+}
+
+section {
+  background-color: #ddcbdd;
+}
+
+section .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .block .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .block .title h3 {
+  font-family: "Dancing Script";
+  font-size: 20px;
+}
+
+section .block .title h2 {
+  font-family: "Otomanopee One";
+  font-size: 25px;
+}
+
+section .block .test-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 950px) {
+  section .block .test-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 25px auto;
+  }
+}
+
+section .block .test-block .left-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .block .test-block .left-block p {
+  font-family: "Dancing Script";
+  font-size: 20px;
+}
+
+section .block .test-block .left-block button {
+  margin-top: 20px;
+  margin-left: 100px;
+  background-color: #2c021c;
+  color: #da76da;
+  font-family: "Otomanopee One";
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+section .block .test-block .left-block button:hover {
+  background-color: fuchsia;
+  color: ghostwhite;
+}
+
+section .block .test-block .right-block img {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  opacity: 0.5;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+section .block .test-block .right-block img:hover {
+  opacity: 1;
+}
+
+footer {
+  background-color: #2c021c;
+}
+
+footer .icons-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .icons-wraper .follow {
+  font-size: 35px;
+  cursor: pointer;
+  font-family: "Dancing Script";
+}
+
+footer .icons-wraper .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .icons-wraper .icons .fab {
+  opacity: 0.5;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+footer .icons-wraper .icons .fab:hover {
+  color: mediumslateblue;
+  opacity: 1.0;
+}
+/*# sourceMappingURL=global.css.map */

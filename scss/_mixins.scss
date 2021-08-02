@@ -1,0 +1,13 @@
+@mixin d-flex($display, $justify, $align) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin hovertransition($property, $duration, $type) {
+    transition: $property $duration $type;
+}
+@mixin di-flex($display, $fx_di, $justify) {
+    display: $display;
+    flex-direction: $fx_di;
+    justify-content: $justify;
+}
